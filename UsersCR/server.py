@@ -1,8 +1,13 @@
-from ast import Delete
-from flask import Flask, render_template, redirect, request
+
+from flask import, render_template, redirect, request
+
+from flask_app import app
+from mysqlconnnection import connectToMySQL
+
 from user import User
 
-app = Flask(__name__)
+
+
 
 @app.route('/')
 def index():
